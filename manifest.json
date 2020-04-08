@@ -4,5 +4,13 @@
   "version": "1.0",
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
-  }
+  }, 
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["sharks.js"]
+    }
+  ]
 }
